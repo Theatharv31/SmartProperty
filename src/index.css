@@ -12,7 +12,7 @@
   --clr-grey: #707070;
   --clr-blue: #6C63FF;
   --clr-blue-2: #4c46b6;
-  --clr-green: #4fb646;
+  --clr-green: #19f705;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
   font-family: "Open Sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #202020;
 }
 
 /* ------------------------------------------------------ */
@@ -36,16 +37,16 @@ nav {
   justify-content: center;
   align-items: center;
 
-  padding: 20px;
+
 }
 
 .nav__brand img {
-  max-width: 125px;
-  height: auto;
+  width: 230px;
+  height: 130px;
 }
 
 .nav__brand h1 {
-  color: var(--clr-blue);
+  color: var(--clr-green);
   font-size: 2.5em;
   font-weight: 800;
 }
@@ -54,21 +55,24 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: #1cf409;
   list-style: none;
 }
 
 .nav__links li {
-  margin: 0 15px;
+  margin-right: 50px;
 }
 
 .nav__links li a {
   text-decoration: none;
-  color: var(--clr-black);
+  color: var(--clr-green);
+  font-size: 30px; /* Adjust the size as needed */
+  font-weight: bold; /* Make the text bold */
 }
 
 .nav__links li a:hover {
   color: var(--clr-blue);
+  font-size: 25px; /* Optional: slightly larger text on hover */
 }
 
 .nav__connect {
@@ -76,8 +80,9 @@ nav {
   height: 50px;
   margin: 0 auto;
 
-  background-color: var(--clr-blue);
-  color: var(--clr-white);
+  background-color: var(--clr-green);
+  color: var(--clr-black);
+  font-weight: bold; 
 
   border: none;
   border-radius: 4px;
@@ -88,20 +93,23 @@ nav {
 
   cursor: pointer;
   transition: all 250ms ease;
+  font-size: 20px;
 }
 
 .nav__connect:hover {
-  background-color: var(--clr-blue-2);
+  background-color: var(--clr-blue);
+  font-size: 22px;
 }
 
 /* ------------------------------------------------------ */
 /* -- HEADER -- */
 
 header {
-  background-image: url("./assets/houses.png");
+  background-image: url("./assets/search.png");
   background-position: center;
-  background-size: cover;
-  min-height: 40vh;
+  background-size: 100% auto; /* Stretches the width to 100% while maintaining the height proportionally */
+  background-repeat: no-repeat; /* Prevents tiling */
+  min-height: 40vh; /* Adjust the height as needed */
 
   position: relative;
 }
@@ -109,35 +117,47 @@ header {
 .header__title {
   position: absolute;
   top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%; /* Move to the left */
+  transform: translate(0, -50%); /* Adjust for left alignment */
 
   color: var(--clr-white);
   font-size: 2em;
-
-  width: 100%;
-  text-align: center;
+  width: auto; /* Adjust width */
+  text-align: left; /* Align text to the left */
 }
 
 .header__search {
-  padding: 25px;
-  min-width: 40%;
+  padding: 15px;
+  width: 50%; /* Adjust the width */
+  min-width: 250px; /* Ensure a minimum width for usability */
+  margin-top: 20px;
+  min-height: 30px;
 
   position: absolute;
   top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%; /* Align with the title */
+  transform: translate(0, -50%); /* Adjust for left alignment */
+  background-color: transparent;
+
+  border: 2px solid var(--clr-green); /* Add a border */
+  border-radius: 25px; /* Make the border rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  font-size: 1em; /* Increase font size */
+  outline: none; /* Remove default outline */
 }
 
 .header__search::placeholder {
-  font-family: "Open Sans";
-  font-size: 1.25em;
-  font-weight: 600;
+  color: var(--clr-white); /* Style the placeholder text */
+  font-style: italic;
 }
 
-.header__search:hover {
-  outline: 1px solid var(--clr-blue);
+.header__search:focus {
+  border-color: var(--clr-blue); /* Change border color on focus */
+  box-shadow: 0 4px 12px rgba(23, 239, 3, 0.4); /* Enhance shadow on focus */
 }
+
+
+
 
 /* ------------------------------------------------------ */
 /* -- CARDS -- */
@@ -150,6 +170,9 @@ header {
 
 .cards__section h3 {
   margin: 50px 0 20px;
+  color:var(--clr-green);
+  font-size: 30px;
+  
 }
 
 .cards {
@@ -161,19 +184,26 @@ header {
 
 .card {
   width: 350px;
-  height: 275px;
+  height: 300px;
 
-  border: 1px solid var(--clr-black);
-  margin: 10px auto;
+  border: 5px solid var(--clr-green);
+  border-radius: 15px;
+  
 
   cursor: pointer;
   position: relative;
+ 
 
   transition: all 250ms ease;
+  margin-bottom: 20px;
 }
 
 .card:hover {
-  box-shadow: 1px 1px 5px var(--clr-grey);
+  box-shadow: 1px 1px 5px var(--clr-blue);
+  height: 320px;
+  width: 370px;
+  margin-bottom: 20px;
+  border: 5px solid var(--clr-blue);
 }
 
 .card__image {
@@ -184,15 +214,19 @@ header {
 
 .card__image img {
   max-width: 100%;
+  border-radius: 10px; /* Add rounded corners */
+  overflow: hidden; /* Ensures no part of the image overflows the border radius */
 }
 
 .card__info {
   width: 100%;
   height: 45%;
 
-  background-color: var(--clr-white);
+  background-color: var(--clr-black);
 
   padding: 5px 10px;
+  color:var(--clr-green);
+  border-radius: 10px;
 
   position: absolute;
   bottom: 0;
@@ -201,13 +235,13 @@ header {
 
 .card__info h4 {
   font-family: "Open Sans";
-  font-size: 1.25em;
+  font-size: 1.50em;
   font-weight: 600;
 }
 
 .card__info p {
   font-family: "Open Sans";
-  font-size: 0.90em;
+  font-size: 1.00em;
   margin-top: 5px;
 }
 
@@ -241,6 +275,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  border-radius: 20px;
 
   background: var(--clr-white);
 }
@@ -248,6 +283,7 @@ header {
 .home__image {
   max-width: 500px;
   margin: 20px auto;
+  
 }
 
 .home__image img {
@@ -277,6 +313,7 @@ header {
   height: 100%;
   margin: 0 20px;
   padding-right: 40px;
+  color: var(--clr-black);
 
   overflow-y: scroll;
 }
@@ -298,6 +335,7 @@ header {
 
   background-color: var(--clr-blue);
   color: var(--clr-white);
+  
 
   border: none;
   border-radius: 4px;

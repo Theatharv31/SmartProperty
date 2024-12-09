@@ -1,13 +1,13 @@
 {
     "name": "WA Nature Home",
-    "address": "183 Woodland Drive, Camano Island, WA 98282",
-    "description": "Comfy island home on Camano Island",
+    "address": "183 Woodland Drive, Deccan",
+    "description": "Single Family Residence, in heart of Deccan",
     "image": "https://ipfs.io/ipfs/QmQUozrHLAusXDxrvsESJ3PYB3rUeUuBAvVWw6nop2uu7c/3.png",
     "id": "3",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 10
+            "value": 25
         },
         {
             "trait_type": "Type of Residence",
