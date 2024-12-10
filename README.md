@@ -1,4 +1,4 @@
-# Real Estate NFT DApp
+# SmartProperty
 
 ## Demo
 
