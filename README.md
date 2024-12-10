@@ -6,6 +6,11 @@
 https://github.com/user-attachments/assets/1bad0fc6-382e-4b27-8e96-992c5de95d35
 
 
+## Block Diagram 
+
+![Smart{Property (1)](https://github.com/user-attachments/assets/97621ce7-bb39-4120-8128-cb649bbee5c0)
+
+
 
 ## Technology Stack & Tools
 
