@@ -10,6 +10,10 @@ https://github.com/user-attachments/assets/1bad0fc6-382e-4b27-8e96-992c5de95d35
 
 ![Smart{Property (1)](https://github.com/user-attachments/assets/97621ce7-bb39-4120-8128-cb649bbee5c0)
 
+## Presentation 
+
+https://www.canva.com/design/DAGZXYKLOPc/ZBtRb2iTPaT3KWZ0C5uatg/view?utm_content=DAGZXYKLOPc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h85fa81263d
+
 
 
 ## Technology Stack & Tools
